@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <style>
+body {
+  background-image: url('sitebg.png');
+}
+</style>
+        <meta charset='utf8'>
+    </head>
+    <body>
+no music? refresh the page
+        <div id='ruffle' align=center style="text-align:center;"></div>
+        <script src='https://unpkg.com/@ruffle-rs/ruffle'></script>
+  
+
+<script>
+window.RufflePlayer.config = {
+    autoplay: "auto"
+};
+</script>
+        
+<script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("ruffle"); 
+            container.appendChild(player);
+            player.load({
+                url: "joeynigrogame.swf", 
+                backgroundColor: "#000", 
+             });
+            player.style.width = "804px"; 
+            player.style.height = "500px";
+            autoplay: "auto";
+        });
+    </script>
+
+    </body>
+</html>

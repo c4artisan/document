@@ -9,14 +9,13 @@ body {
         <meta charset='utf8'>
     </head>
     <body>
-no music? refresh the page
         <div id='ruffle' align=center style="text-align:center;"></div>
         <script src='https://unpkg.com/@ruffle-rs/ruffle'></script>
   
 
 <script>
 window.RufflePlayer.config = {
-    autoplay: "auto"
+    autoplay: "on"
 };
 </script>
         
@@ -33,7 +32,7 @@ window.RufflePlayer.config = {
              });
             player.style.width = "804px"; 
             player.style.height = "500px";
-            autoplay: "auto";
+            autoplay: "on";
         });
     </script>
 
